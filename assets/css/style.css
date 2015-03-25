@@ -1,0 +1,63 @@
+h1 {
+	font-family: Garamond;
+}
+
+header {
+	height:100vh;
+	background-color: #88CDCA;
+}
+
+.bottom_border {
+	height: 50px;
+	position: relative;
+	border-radius: 0px;
+	background-color: gray;
+}
+
+header .intro-text .intro-lead-in {
+	position: relative;
+	text-align: right;
+	margin: 50px 100px 0px 0px;
+	font-weight: bold;
+	font-family: Garamond;
+	font-size: 80px;
+	color: #ffffff;
+	z-index: 2;
+}
+
+header .intro-text .intro-heading {
+	position: relative;
+	text-align: right;
+	margin-right: 100px;
+	font-family: Garamond;
+	font-size: 40px;
+	color: #ffffff;
+	z-index: 2;
+}
+
+#header_main {
+	width: 40%;
+	float: left;
+	position: relative;
+	bottom: 50px;
+	margin-left: 75px;
+	z-index: 1;
+}
+
+/* icon circles 73.426 px */
+.icon_link {
+	opacity: .65;
+	width: 100px;
+}
+
+#linkedin {
+	position: relative;
+	margin: 50px 50px 0px 0px;
+	float: right;
+}
+
+#email {
+	position: relative;
+	margin: 50px 100px 0px 0px;
+	float: right;
+}
