@@ -54,14 +54,7 @@ header .intro-text .intro-heading {
 /* icon circles 73.426 px */
 .icon_link {
 	width: 100px;
-}
-
-a:link {
 	opacity: 0.75;
-}
-
-a:hover {
-	opacity: 1;
 }
 
 #linkedin {
@@ -75,3 +68,15 @@ a:hover {
 	margin: 50px 100px 0px 0px;
 	float: right;
 }
+
+/*.intro-text a:link {
+	opacity: 0.75;
+}*/
+
+.icon_link:hover {
+	opacity: 1;
+}
+/*
+#email:hover {
+	opacity: 1;
+}*/
