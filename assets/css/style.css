@@ -35,6 +35,13 @@ header .intro-text .intro-heading {
 	z-index: 2;
 }
 
+#temp {
+	margin: 450px 100px 0px 0px;
+	font-size: 25px;
+	opacity: .75;
+	color: #414948;
+}
+
 #header_main {
 	width: 40%;
 	float: left;
@@ -46,8 +53,15 @@ header .intro-text .intro-heading {
 
 /* icon circles 73.426 px */
 .icon_link {
-	opacity: .65;
 	width: 100px;
+}
+
+a:link {
+	opacity: 0.75;
+}
+
+a:hover {
+	opacity: 1;
 }
 
 #linkedin {
