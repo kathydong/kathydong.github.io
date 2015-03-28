@@ -58,6 +58,7 @@ footer .footer_text {
 
 header {
 	height:100vh;
+	min-height: 700px;
 	background-color: #88CDCA;
 }
 
@@ -104,10 +105,19 @@ header #header_main {
 	z-index: 1;
 }
 
+.icons {
+	display: block;
+	float: left;
+	position: relative;
+	margin-left: 1vw;
+}
+
 /* icon circles 73.426 px */
 .icon_link {
-	width: 7vw;
+	width: 6.5vw;
+	text-align: center;
 	opacity: 0.75;
+	margin: 3vw 1.5vw 0vw 1.5vw;
 }
 
 .icon_link:hover {
@@ -117,65 +127,10 @@ header #header_main {
     transition: all ease .25s;
 }
 
-#linkedin {
-	position: relative;
-	margin: 2vw 20vw 0vw 0vw;
-	float: right;
-}
-
-#email {
-	position: relative;
-	margin: 2vw 15vw 0px 0px;
-	float: right;
-}
-
 .full_interests {
 	width: 50vw;
 	margin-bottom: 3vw;
 }
-/*.interests {
-	display: inline-block;
-	margin: auto;
-	width: 5vw;
-	padding-bottom: 60px;
-	opacity: 0.65;
-}
-
-.interests:hover {
-	opacity: 1;
-    -webkit-transition: all ease .25s;
-    -moz-transition: all ease .25s;
-    transition: all ease .25s;
-}
-
-#interests_small {
-	position: relative;
-	margin-top: 40px;
-}
-
-#interests_arrow {
-	position: relative;
-	width: 5vw;
-	margin-top: 60px;
-}
-
-
-.large_circle {
-	display: block;
-	margin: auto;
-	height: 10vw;
-	width: 10vw;
-	border-radius: 100%;
-	background-color: #88CDCA;
-	padding: 25px;
-}
-
-.large_circle:hover {
-	background-color: #F9E23A;
-    -webkit-transition: all ease .25s;
-    -moz-transition: all ease .25s;
-    transition: all ease .25s;
-}*/
 
 .line {
 	height: 8px;
@@ -319,6 +274,10 @@ header #header_main {
 	font-size: 15px;
 }
 
+.topbar-buttons {
+	margin-top: 17px;
+}
+
 ul.social-buttons {
 	float: right;
     margin-top: 16px;
@@ -352,14 +311,4 @@ ul.social-buttons li a:hover {
 .btn.active,
 .btn:active:focus {
     outline: 0;
-}
-
-/*
- * PORTFOLIO CSS
- * css stylization for portfolio pages
- */
-
-.portfolio_top {
-	height:10vh;
-	background-color: #88CDCA;
 }

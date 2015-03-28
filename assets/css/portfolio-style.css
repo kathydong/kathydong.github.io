@@ -1,0 +1,47 @@
+/*
+ * PORTFOLIO CSS
+ * css stylization for portfolio pages
+ */
+
+.portfolio_bottom {
+	height: 20px;
+	position: relative;
+	border-radius: 0px;
+	background-color: #6C8C8A;
+}
+
+.header-font {
+	position: relative;
+	margin-top: 25px;
+	margin-left: -15px;
+	font-family: 'Roboto';
+	color: #686868;
+	font-weight: 100;
+	font-size: 2.5vw;
+}
+
+.portfolio_page {
+	height: 100%;
+	min-height: 100vh;
+	background-color: #F4F4F4;
+}
+
+.portfolio_top {
+	position: relative;
+	height: 100px;
+	min-height: 100px;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.portfolio_top-border {
+	position: relative;
+	height:10px;
+	width: 100%;
+	background-color: #88CDCA;
+}
+
+.top-logo {
+	margin-top: 20px;
+	width: 20vw;
+}
