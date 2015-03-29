@@ -11,13 +11,13 @@ a:hover {
 }
 
 #baker_berry {
-	width: 12vw;
-	position: relative;
-	margin: -87px 0px 0px 25px;
+	width: 250px;
+	position: absolute;
+	margin-top: -25%;
 }
 
 .top_border {
-	height: 50px;
+	height: 35px;
 	position: relative;
 	border-radius: 0px;
 	background-color: #DAE0DF;
@@ -57,8 +57,7 @@ footer .footer_text {
 }
 
 header {
-	height:100vh;
-	min-height: 700px;
+	height: 100vh;
 	background-color: #88CDCA;
 }
 
@@ -96,28 +95,29 @@ header #header_subtext {
 }
 
 header #header_main {
-	width: 45vw;
+	width: 700px;
 	float: left;
     line-height: auto;
 	position: relative;
-	margin-top: 8vw;
-	margin-left: 3.5vw;
+	margin-top: 85px;
+	margin-left: 40px;
 	z-index: 1;
 }
 
 .icons {
 	display: block;
-	float: left;
+	position: absolute;
+/*	float: left;*/
 	position: relative;
-	margin-left: 1vw;
+	.center-block: center;
 }
 
 /* icon circles 73.426 px */
 .icon_link {
-	width: 6.5vw;
-	text-align: center;
+	width: 5.95vw;
+	position: absolute;
 	opacity: 0.75;
-	margin: 3vw 1.5vw 0vw 1.5vw;
+	margin: 2vw 0vw 0vw 0vw;
 }
 
 .icon_link:hover {
@@ -128,7 +128,7 @@ header #header_main {
 }
 
 .full_interests {
-	width: 50vw;
+	width: 100%;
 	margin-bottom: 3vw;
 }
 
@@ -178,13 +178,18 @@ header #header_main {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
-    background: rgba(254,209,54,.9); /* Fallback when no plugin support */
-    background: rgba(#FCD054, .9);
+    /*background: rgba(254,209,54,.9);*/ /* Fallback when no plugin support */
+    background: rgba(161,209,206,.9); 
+    background: rgba(#B3DDDA, .9);
+    /* #FCD054 */
 }
 
+/* 4.507 in x 5.1362 in */
 #portfolio .portfolio-item .portfolio-link .img-responsive{
     max-height: 400px;
     display:block;
+    -webkit-filter: grayscale(100%) contrast(115%); 
+    filter: grayscale(100%);
     margin:auto;
 }
 
@@ -270,8 +275,8 @@ header #header_main {
 .subtext {
 	text-align: left;
 	font-family: 'Noticia Text', Garamond, serif;
-	font-weight: 300;
-	font-size: 15px;
+	font-weight: 400;
+	font-size: 14px;
 }
 
 .topbar-buttons {
@@ -294,7 +299,7 @@ ul.social-buttons li a {
     margin-right: 10px;
     text-align: center;
     outline: 0;
-    color: #D9E8E7;
+    color: #ffffff;
     background-color: #222;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
@@ -303,7 +308,6 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:hover {
     background-color: #87C1BC;
-    color: white;
 }
 
 .btn:focus,
