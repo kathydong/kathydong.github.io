@@ -3,8 +3,22 @@
  * css stylization for portfolio pages
  */
 
+ html,body{
+
+ 	width:100%;
+ 	margin:auto;
+ 	overflow-x:hidden;
+
+ }
+
+.arsenic {
+	width: 50%;
+	margin: 50px 0px 50px 0px;
+}
+
 .portfolio_bottom {
 	height: 20px;
+	width: 100%;
 	position: relative;
 	border-radius: 0px;
 	background-color: #6C8C8A;
@@ -17,12 +31,12 @@
 	font-family: 'Roboto';
 	color: #686868;
 	font-weight: 100;
-	font-size: 2.5vw;
+	font-size: 20px;
 }
 
 .portfolio_page {
 	height: 100%;
-	min-height: 100vh;
+	width: 100%;
 	background-color: #F4F4F4;
 }
 
@@ -41,7 +55,56 @@
 	background-color: #88CDCA;
 }
 
+.title {
+	margin-top: 25px;
+	position: relative;
+	margin-right: 100px;
+	font-family: 'Noticia Text', 'Roboto', Garamond, sans-serif;
+	font-weight: 400;
+	font-size: 38px;
+    line-height: auto;
+	color: #414948;
+	opacity: .75;
+	z-index: 2;
+}
+
+.subtitle {
+	position: relative;
+	font-family: 'Noticia Text', 'Roboto', Garamond, sans-serif;
+	font-weight: 400italic;
+	font-size: 25px;
+	color: #4E686B;
+}
+
 .top-logo {
 	margin-top: 20px;
 	width: 20vw;
+}
+
+@media(max-width:1000px) {
+	.portfolio_top {
+		height: 125px;
+	}
+
+	.arsenic {
+		width: 50%;
+		margin: 50px;
+	}
+
+	.title {
+		font-size: 30px;
+	}
+}
+
+
+*::selection {
+  background: #F9DE6B;
+}
+
+*::-moz-selection {
+  background: #F9DE6B;
+}
+
+*::-webkit-selection {
+  background: #F9DE6B;
 }

@@ -1,3 +1,11 @@
+ html,body{
+
+ 	width:100%;
+ 	margin:auto;
+ 	overflow-x:hidden;
+ 	
+ }
+ 
 a {
 	color: #55B7B4;
 }
@@ -28,6 +36,7 @@ a:hover {
 	height: 12px;
 	position: relative;
 	border-radius: 0px;
+	margin-bottom: 7px;
 	background-color: #6C8C8A;
 }
 
@@ -45,11 +54,13 @@ a:hover {
 
 footer {
 	height:70px;
+	text-align: center;
 	background-color: white;
 }
 
 footer .footer_text {
 	font-size: 13px;
+	line-height: 60px;
 	color: #414948;
 	padding-top: 25px;
 	font-weight: 400;
@@ -58,6 +69,7 @@ footer .footer_text {
 
 header {
 	height: 100vh;
+	width: 100vw;
 	background-color: #88CDCA;
 }
 
@@ -104,12 +116,37 @@ header #header_main {
 	z-index: 1;
 }
 
+@media(max-width:768px) {
+    header {
+		height: 475px;
+		background-color: #88CDCA;
+	}
+
+	header #header_main {
+		width: 90%;
+		float: left;
+	    line-height: auto;
+		position: relative;
+		margin-top: 85px;
+		margin-left: 30px;
+		z-index: 1;
+	}
+
+	.footer_text {
+		text-align: center;
+	}
+
+	.icons {
+		width: 50%;
+		margin-right: 25px;
+	}
+}
+
 .icons {
+	min-width: 100px;
 	display: block;
-	position: absolute;
-/*	float: left;*/
 	position: relative;
-	.center-block: center;
+	margin-right: 100px;
 }
 
 /* icon circles 73.426 px */
@@ -117,7 +154,7 @@ header #header_main {
 	width: 5.95vw;
 	position: absolute;
 	opacity: 0.75;
-	margin: 2vw 0vw 0vw 0vw;
+	margin: 2vw auto;
 }
 
 .icon_link:hover {
@@ -284,10 +321,10 @@ header #header_main {
 }
 
 ul.social-buttons {
-	float: right;
-    margin-top: 16px;
-    margin-right: 60px;
-}
+/*	float: right;
+*/    margin-top: 16px;
+/*    margin-right: 60px;
+*/}
 
 ul.social-buttons li a {
     display: block;
@@ -315,4 +352,16 @@ ul.social-buttons li a:hover {
 .btn.active,
 .btn:active:focus {
     outline: 0;
+}
+
+*::selection {
+  background: #F7E181;
+}
+
+*::-moz-selection {
+  background: #F7E181;
+}
+
+*::-webkit-selection {
+  background: #F7E181;
 }
