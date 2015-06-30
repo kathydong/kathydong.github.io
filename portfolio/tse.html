@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Kathy Dong | Tiny Search Engine</title>
+        <link rel="icon" type="image/png" href="../assets/img/KD.png">
+
+        <!-- Bootstrap CSS -->
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS stylesheet -->
+        <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../assets/css/portfolio-style.css">
+
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="../assets/css/font-awesome/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+
+    <body>
+        <section class="portfolio header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="portfolio_top">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <a href="../"><img class="top-logo" src="../assets/img/KD-header.png" /></a>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4 topbar-buttons">
+                            <ul class="list-inline social-buttons">
+                                
+                                <li><a href="https://www.linkedin.com/in/kathysdong"><i class="fa fa-linkedin" style="color: #FFFFFF"></i></a>
+                                </li>
+
+                                <li><a href="https://github.com/kathydong"><i class="fa fa-github" style="color: #FFFFFF"></i></a>
+                                </li>
+                                
+                                <li><a href="https://www.flickr.com/photos/45792484@N08/sets"><i class="fa fa-camera-retro" style="color: #FFFFFF"></i></a>
+                                </li>
+                                
+                                <li><a href="mailto:katherine.s.dong.17@dartmouth.edu"><i class="fa fa-envelope" style="color: #FFFFFF"></i></a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid portfolio_top-border"> </div>
+
+        <section class="portfolio_page">
+                <div class="row">
+                    <div class="col-sm-2 col-md-2"></div>
+                    <div class="col-sm-8 col-md-8"> 
+                        <div class="title"> TINY SEARCH ENGINE </div>
+                        <p class="subtext"> <br>This is a search engine that crawls coded in C which goes through archieved Dartmouth Computer Science pages to find pages that are most relevant based on keywords. The search engine is split into three key components: crawler, indexer, and query.<br><br>
+
+                        Crawler is a standalone program which takes a seed webpage and crawls through all of subsequent websites. It starts with the seed page, parsing the HTML for embedded URLs, and continues until URLs from all pages have been accounted for (up to a specified depth). Each crawled page is saved into a document with the URL, index, and HTML content. <br><br>
+
+                        Indexer uses the previously crawled pages to create an index.dat file, which contains the occurrences of words in each file. It ultimately creates a list of webpages where a certain word occurs and indicates the frequency of the world (i.e. computer 1 5 2 17 - computer occurs in pages 1 and 2, with 5 and 17 instances respectively). <br><br>
+
+                        Query takes the index.dat file generated from indexer and the crawled files generated from crawler to create a command-line search. Query parses the user query appropriately (taking into consideration false words, capitalization, AND and OR commands, etc.), and then searches for the documents that include the highest frequencies of the search input. The documents and URLs are then displayed in a sorted list. <br><br>
+
+                        <iframe src="http://docs.google.com/gview?url=../documents/QueryEngineSpec.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+
+                    </div>
+                </div>
+    </body>
+</html>

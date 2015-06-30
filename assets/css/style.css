@@ -216,8 +216,9 @@ header #header_main {
     -moz-transition: all ease .5s;
     transition: all ease .5s;
     /*background: rgba(254,209,54,.9);*/ /* Fallback when no plugin support */
-    background: rgba(161,209,206,.9); 
-    background: rgba(#B3DDDA, .9);
+/*    background: rgba(161,209,206,.9); 
+    background: rgba(#B3DDDA, .9);*/
+    background: white;
     /* #FCD054 */
 }
 
@@ -225,13 +226,13 @@ header #header_main {
 #portfolio .portfolio-item .portfolio-link .img-responsive{
     max-height: 400px;
     display:block;
-    -webkit-filter: grayscale(100%) contrast(115%); 
-    filter: grayscale(100%);
+/*    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);*/
     margin:auto;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-    opacity: 0.8;
+    opacity: 0.50;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -242,7 +243,7 @@ header #header_main {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+    color: black;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
@@ -267,6 +268,7 @@ header #header_main {
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
     font-family: 'Noticia Text', 'Roboto', Garamond, sans-serif;
+    font-weight: 700;
     font-size: 15px;
     text-transform: none;
 }
@@ -305,8 +307,9 @@ header #header_main {
 .section_text {
 	margin-top: 10px;
 	text-align: center;
+    font-family: 'Noticia Text', Garamond, serif;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .subtext {
