@@ -60,21 +60,25 @@
         <div class="container-fluid portfolio_top-border"> </div>
 
         <section class="portfolio_page">
-                <div class="row">
-                    <div class="col-sm-2 col-md-2"></div>
-                    <div class="col-sm-8 col-md-8"> 
-                        <div class="title"> TINY SEARCH ENGINE </div>
-                        <p class="subtext"> <br>This is a search engine that crawls coded in C which goes through archieved Dartmouth Computer Science pages to find pages that are most relevant based on keywords. The search engine is split into three key components: crawler, indexer, and query.<br><br>
+            <div class="row">
+                <div class="col-sm-2 col-md-2"></div>
+                <div class="col-sm-8 col-md-8"> 
+                    <div class="title"> TINY SEARCH ENGINE </div>
+                    <p class="subtext"> <br>This is a search engine that crawls coded in C which goes through archieved Dartmouth Computer Science pages to find pages that are most relevant based on keywords. The search engine is split into three key components: crawler, indexer, and query.<br><br>
 
-                        Crawler is a standalone program which takes a seed webpage and crawls through all of subsequent websites. It starts with the seed page, parsing the HTML for embedded URLs, and continues until URLs from all pages have been accounted for (up to a specified depth). Each crawled page is saved into a document with the URL, index, and HTML content. <br><br>
+                    Crawler is a standalone program which takes a seed webpage and crawls through all of subsequent websites. It starts with the seed page, parsing the HTML for embedded URLs, and continues until URLs from all pages have been accounted for (up to a specified depth). Each crawled page is saved into a document with the URL, index, and HTML content. <br><br>
 
-                        Indexer uses the previously crawled pages to create an index.dat file, which contains the occurrences of words in each file. It ultimately creates a list of webpages where a certain word occurs and indicates the frequency of the world (i.e. computer 1 5 2 17 - computer occurs in pages 1 and 2, with 5 and 17 instances respectively). <br><br>
+                    Indexer uses the previously crawled pages to create an index.dat file, which contains the occurrences of words in each file. It ultimately creates a list of webpages where a certain word occurs and indicates the frequency of the world (i.e. computer 1 5 2 17 - computer occurs in pages 1 and 2, with 5 and 17 instances respectively). <br><br>
 
-                        Query takes the index.dat file generated from indexer and the crawled files generated from crawler to create a command-line search. Query parses the user query appropriately (taking into consideration false words, capitalization, AND and OR commands, etc.), and then searches for the documents that include the highest frequencies of the search input. The documents and URLs are then displayed in a sorted list. <br><br>
-
-                        <iframe src="http://docs.google.com/gview?url=../documents/QueryEngineSpec.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
-
-                    </div>
+                    Query takes the index.dat file generated from indexer and the crawled files generated from crawler to create a command-line search. Query parses the user query appropriately (taking into consideration false words, capitalization, AND and OR commands, etc.), and then searches for the documents that include the highest frequencies of the search input. The documents and URLs are then displayed in a sorted list. <br><br>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-4">
+                    <iframe src="http://docs.google.com/gview?url=kathydong.com/documents/QueryEngineSpec.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

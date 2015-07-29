@@ -3,7 +3,6 @@
  	width:100%;
  	margin:auto;
  	overflow-x:hidden;
- 	
  }
  
 a {
@@ -16,6 +15,19 @@ a:hover {
     -webkit-transition: all ease .25s;
     -moz-transition: all ease .25s;
     transition: all ease .25s;
+}
+
+#down_arrow {
+    text-align: center;
+}
+
+.fa-angle-down {
+    color: #FFFFFF;
+    opacity: .5;
+}
+
+.fa-angle-down:hover {
+    opacity: 1;
 }
 
 #baker_berry {
@@ -68,7 +80,7 @@ footer .footer_text {
 }
 
 header {
-	height: 100vh;
+	height: 720px;
 	width: 100vw;
 	background-color: #88CDCA;
 }
@@ -223,17 +235,24 @@ header #header_main {
 }
 
 /* 4.507 in x 5.1362 in */
-#portfolio .portfolio-item .portfolio-link .img-responsive{
+#portfolio .portfolio-item .portfolio-link {
     max-height: 400px;
     display:block;
-/*    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);*/
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
     margin:auto;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
-    opacity: 0.50;
+#portfolio .portfolio-item .portfolio-link:hover{
+    max-height: 400px;
+    display:block;
+    -webkit-filter: none; 
+    margin:auto;
 }
+
+/*#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 0.50;
+}*/
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     position: absolute;
@@ -244,15 +263,6 @@ header #header_main {
     text-align: center;
     font-size: 20px;
     color: black;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
-    margin-top: -12px;
-}
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-    margin: 0;
 }
 
 #portfolio .portfolio-item .portfolio-caption {
